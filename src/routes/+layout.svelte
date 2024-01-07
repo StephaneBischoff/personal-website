@@ -1,4 +1,5 @@
 <script>
+    import { t } from '$lib/translations';
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
@@ -11,7 +12,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>{$t('common.footer')}{new Date()}</p>
 	</footer>
 </div>
 
